@@ -1,0 +1,184 @@
+/* .........Body................ */
+body {
+    margin: 20px 100px;
+}
+
+/* .........Intro................... */
+.intro-text-section h1 {
+    font-size: xx-large;
+    color: grey;
+}
+
+.intro-text-section li {
+    color: gray;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 60px 0px;
+    padding: 30px 0px;
+    border: 10px solid white;
+    background-color: papayawhip;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition-duration: 1s;
+
+}
+
+.intro-section:hover {
+    background-color: lavenderblush;
+}
+
+
+
+.intro-image-section {
+    width: 240px;
+    height: 350px;
+}
+
+/* ...........AboutMe................. */
+.aboutMe-text-section h1 {
+    font-size: xx-large;
+}
+
+.aboutMe-text-section p {
+    color: gray;
+}
+
+.aboutMe-text-section {
+    width: 500px;
+}
+
+.aboutMe-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutMe-image-section {
+    width: 240px;
+    height: 350px;
+}
+
+.aboutMe-section {
+    border: 10px solid white;
+    background-color: lightcyan;
+    padding: 30px 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition-duration: 1s;
+
+}
+
+.aboutMe-section:hover {
+    background-color: peachpuff;
+}
+
+/* .............whaiIDo-section................... */
+.whatIDo-section {
+    margin: 60px 0px;
+    background-color: lavender;
+    padding: 40px 12px;
+    border: 10px solid white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition-duration: 1s;
+}
+
+.whatIDo-section:hover {
+    background-color: bisque;
+}
+
+
+.whatIDo-card-section {
+    display: flex;
+    justify-content: space-evenly;
+    transition-duration: 1s;
+}
+
+.whatIDo-card-section div:hover {
+    background-color: lightyellow;
+}
+
+
+
+.whatIDo-card-section div {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 10px;
+    width: 240px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    justify-content: center;
+    gap: 2px;
+}
+
+/* ...................MEDIA---->>> Screen<<<------------................ */
+
+@media only screen and (max-width: 630px) {
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgrey;
+    }
+
+    body {
+        margin: 40px 10px;
+    }
+
+    .intro-text-section {
+        background-color: aliceblue;
+        border-radius: 20px;
+        border: 2px solid black;
+        padding: 10px 5px;
+    }
+}
+
+/* ...............Media About Section................................. */
+
+@media only screen and (max-width: 630px) {
+    .aboutMe-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: floralwhite;
+    }
+
+    body {
+        margin: 40px 10px;
+    }
+
+    .aboutMe-text-section {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+}
+
+/* ..............Media What i Do Section................................. */
+
+@media only screen and (max-width: 630px) {
+    .whatIDo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: mistyrose;
+
+    }
+
+    body {
+        margin: 40px 10px;
+    }
+
+    .whatIDo-card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px;
+        gap: 50px;
+    }
+}
